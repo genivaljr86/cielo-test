@@ -27,7 +27,7 @@ function moduleTable() {
       function launch() {
         console.log('scope.headers', scope.headers);
         setTimeout(() => {
-          jQuery('#table_id').DataTable({
+          jQuery('#custom_table').DataTable({
             dom: 'B',
             buttons: [
               { extend: 'colvis', text: '+ Colunas' }
