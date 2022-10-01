@@ -1,0 +1,18 @@
+{
+  "generator-webpack-angularjs": {
+    "app": "cielo-test",
+    "module": "app",
+    "services": [
+      "LoginSvc"
+    ],
+    "directives": [
+      "titlecase"
+    ],
+    "states": [
+      "login",
+      "home",
+      "home.payments",
+      "home.about"
+    ]
+  }
+}

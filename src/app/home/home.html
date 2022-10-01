@@ -1,0 +1,25 @@
+<main role="main">
+  <div class="row">
+    <div class="col-sm">
+      <div summary-card subtitle="totalAmount" value="{{summary.totalAmount | currency}}" icon="bar-chart" theme="primary"></div>
+    </div>
+    <div class="col-sm">
+      <div summary-card subtitle="totalNetAmount" value="{{summary.totalNetAmount | currency}}" icon="usd" theme="secondary"></div>
+    </div>
+    <div class="col-sm">
+      <div summary-card subtitle="totalAverageAmount" value="{{summary.totalAverageAmount | currency}}" icon="bar-chart" theme="danger"></div>
+    </div>
+    <div class="col-sm">
+      <div summary-card subtitle="totalQuantity" value="{{summary.totalQuantity}}" icon="line-chart" theme="warning"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <div class="card m-2">
+        <div class="card-body">
+          <div module-table headers="headers" data="items"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main><!-- /.container -->
