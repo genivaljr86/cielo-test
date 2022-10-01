@@ -28,10 +28,6 @@ function moduleTable() {
         console.log('scope.headers', scope.headers);
         setTimeout(() => {
           jQuery('#custom_table').DataTable({
-            dom: 'B',
-            buttons: [
-              { extend: 'colvis', text: '+ Colunas' }
-            ],
             language: {
               emptyTable: 'Nenhum registro encontrado',
               zeroRecords: 'Nenhum registro encontrado',

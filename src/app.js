@@ -53,13 +53,6 @@ importAll(require.context('./app', true, /.js$/))
 angular.module('app')
   .config(['$urlRouterProvider', defaultRoute])
   .run(['$rootScope', '$location', '$sessionStorage', addAuthGuard])
-/*
-// https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions
-// debugging
-angular.module('app').run(function($rootScope) {
-  $rootScope.$on("$stateChangeError", console.log.bind(console));
-});
-*/
 
 module.exports = angular.module('app');
 // load index

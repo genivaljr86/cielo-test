@@ -2,44 +2,26 @@
 
 Teste admissional da Cielo
 
-## Building & Running ##
+## Building & Execução ##
 
-To build run the following command which will build a clean distribution in the `dist` folder
+Para buildar execute o seguinte comando que irá criar uma versão pra produção em `dist`
 
 ``` sh
 webpack
 ```
-or via NPM using
+ou via NPM usando
 ```sh
 npm run build
 ```
 
-For development 
+Para desenvolvimento 
 
-1. Create a `.env` file with the value of API_HOST to point to a host that is serving the API's
-   ```sh
-   API_HOST=httpbin.org
-   ```
-2. Update `wbepack.config.js` to update the ports and url prefixes for proxying from the remote API host
-   ```json
-   {
-     //...
-     proxy: {
-       "/api": {
-         changeOrigin: true,
-         target: `http://${apiHost}//`,
-         pathRewrite: { "^/api": "" },
-         agent: proxyAgent
-       }
-     }
-   }
-   ```
-3. Run the dev server
+1. Execute o servidor dev
    ```sh
    webpack-dev-server
    ```
-   or 
+   ou 
    ```sh
    npm run start
    ```
-4. Visit `http://localhost:4200`
+2. Visite `http://localhost:4200`
